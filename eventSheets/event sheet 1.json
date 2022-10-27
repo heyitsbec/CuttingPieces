@@ -1,0 +1,62 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 551417018342279
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "scissors",
+					"sid": 424846557172547,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Subtitles",
+					"sid": 557273163651639,
+					"parameters": {
+						"text": "\"Hello. I invite you audience members to come up to the stage one at a time to cut a piece of my clothing and take it with you.\"",
+						"duration": "4.0"
+					}
+				}
+			],
+			"sid": 844752007888960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 387883141240276,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "tostage"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 326821532999735,
+					"parameters": {
+						"layout": "\"Intro\""
+					}
+				}
+			],
+			"sid": 415218300425169
+		}
+	],
+	"sid": 569214747873920
+}

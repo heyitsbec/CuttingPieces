@@ -1,0 +1,53 @@
+{
+	"name": "Title Screen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 459014051201143
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 832034476981396,
+					"parameters": {
+						"sprite": "Pointer"
+					}
+				}
+			],
+			"sid": 982256944598365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 688012909349525,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "playbutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 152829272811988,
+					"parameters": {
+						"layout": "\"Starting\""
+					}
+				}
+			],
+			"sid": 787733543128876
+		}
+	],
+	"sid": 158423502402195
+}

@@ -1,0 +1,72 @@
+{
+	"name": "Cutsheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 744610877119841
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 282200804973012,
+					"parameters": {
+						"sprite": "scissors"
+					}
+				}
+			],
+			"sid": 967476513239659
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 339962394777854,
+					"parameters": {
+						"interval-seconds": "5.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "artist2",
+					"sid": 783867631393563,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 587310978945414
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 873865574360173
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 591794653525889,
+					"parameters": {
+						"sprite": "scissors2"
+					}
+				}
+			],
+			"sid": 556592802465940
+		}
+	],
+	"sid": 501731113906130
+}
